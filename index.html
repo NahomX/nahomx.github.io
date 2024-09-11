@@ -12,6 +12,9 @@
             color: #333;
             margin: 0;
             padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         header {
@@ -46,6 +49,7 @@
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
+            flex-grow: 1; /* Allows the content to grow and push the footer down */
         }
 
         .section {
@@ -76,9 +80,7 @@
             color: white;
             text-align: center;
             padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            margin-top: 20px;
         }
 
         footer p {
